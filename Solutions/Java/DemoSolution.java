@@ -8,7 +8,7 @@ main question goes here
 
 public class DemoSolution extends SolutionTesting {
     //The actual solution to the problem
-    final static int ACTUAL_ANSWER = 000000;
+    final static int ACTUAL_ANSWER = -1;
     public static void main(String[] args) {
         EnsureSolution(Solution1(), ACTUAL_ANSWER, 1);
     }
