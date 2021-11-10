@@ -6,11 +6,12 @@ QUESTION
 What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 */
 
+import java.math.BigInteger;
 import java.util.ArrayList;
 
 public class P5 extends SolutionTesting {
     //The actual solution to the problem
-    final static int ACTUAL_ANSWER = 232792560;
+    final static BigInteger ACTUAL_ANSWER = new BigInteger("232792560");
     public static void main(String[] args) {
         EnsureSolution(Solution1(), ACTUAL_ANSWER, 1);
     }

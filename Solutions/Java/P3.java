@@ -6,11 +6,12 @@ QUESTION
 What is the largest prime factor of the number 600851475143?
 */
 
+import java.math.BigInteger;
 import java.util.ArrayList;
 
 public class P3 extends SolutionTesting {
     //The actual solution to the problem
-    final static int ACTUAL_ANSWER = 6857;
+    final static BigInteger ACTUAL_ANSWER = new BigInteger("6857");
     public static void main(String[] args) {
         EnsureSolution(Solution1(), ACTUAL_ANSWER, 1);
     }

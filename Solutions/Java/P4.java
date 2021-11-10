@@ -6,9 +6,11 @@ QUESTION
 Find the largest palindrome made from the product of two 3-digit numbers.
 */
 
+import java.math.BigInteger;
+
 public class P4 extends SolutionTesting {
     //The actual solution to the problem
-    final static int ACTUAL_ANSWER = 906609;
+    final static BigInteger ACTUAL_ANSWER = new BigInteger("906609");
     public static void main(String[] args) {
         EnsureSolution(Solution1(), ACTUAL_ANSWER, 1);
     }

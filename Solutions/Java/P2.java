@@ -7,9 +7,11 @@ QUESTION
 By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 */
 
+import java.math.BigInteger;
+
 public class P2 extends SolutionTesting {
     //The actual solution to the problem
-    final static int ACTUAL_ANSWER = 4613732;
+    final static BigInteger ACTUAL_ANSWER = new BigInteger("4613732");
     public static void main(String[] args) {
         EnsureSolution(Solution1(), ACTUAL_ANSWER, 1);
     }

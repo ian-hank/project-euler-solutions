@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 /* 
 BACKGROUND
 By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
@@ -8,9 +6,12 @@ QUESTION
 What is the 10 001st prime number?
 */
 
+import java.math.BigInteger;
+import java.util.ArrayList;
+
 public class P7 extends SolutionTesting {
     //The actual solution to the problem
-    final static int ACTUAL_ANSWER = 104743;
+    final static BigInteger ACTUAL_ANSWER = new BigInteger("104743");
     public static void main(String[] args) {
         EnsureSolution(Solution1(), ACTUAL_ANSWER, 1);
     }
@@ -34,7 +35,6 @@ public class P7 extends SolutionTesting {
                 primeList.add(i);
             }
         }
-        System.out.println(primeList.toString());
         //END SOLUTION
 
         long endTime = System.nanoTime();

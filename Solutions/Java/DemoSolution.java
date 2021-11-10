@@ -6,9 +6,11 @@ QUESTION
 main question goes here
 */
 
+import java.math.BigInteger;
+
 public class DemoSolution extends SolutionTesting {
     //The actual solution to the problem
-    final static int ACTUAL_ANSWER = -1;
+    final static BigInteger ACTUAL_ANSWER = new BigInteger("-1");
     public static void main(String[] args) {
         EnsureSolution(Solution1(), ACTUAL_ANSWER, 1);
     }
@@ -23,7 +25,7 @@ public class DemoSolution extends SolutionTesting {
         //END SOLUTION
 
         long endTime = System.nanoTime();
-        //Answer goes in result[0]
+        result[0] = -1; //ASNWER GOES HERE
         result[1] = endTime - startTime;
         return result;
     }

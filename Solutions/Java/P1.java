@@ -6,9 +6,11 @@ QUESTION
 Find the sum of all the multiples of 3 or 5 below 1000.
 */
 
+import java.math.BigInteger;
+
 public class P1 extends SolutionTesting {
     //The actual solution to the problem
-    final static int ACTUAL_ANSWER = 233168;
+    final static BigInteger ACTUAL_ANSWER = new BigInteger("233168");
     public static void main(String[] args) {
         EnsureSolution(Solution1(), ACTUAL_ANSWER, 1);
     }
