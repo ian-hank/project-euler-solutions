@@ -22,10 +22,11 @@ public class P7 extends SolutionTesting {
         long startTime = System.nanoTime();
 
         //START SOLUTION
+        long finalAnswer;
         ArrayList<Integer> primeList = new ArrayList<Integer>();
         for (int i = 1; primeList.size() != 10_001; i++) {
-
                int counter = 0;
+               
                for (int num = i; num >= 1; num--) {
                    if (i % num == 0) {
                     counter += 1;
@@ -35,10 +36,11 @@ public class P7 extends SolutionTesting {
                 primeList.add(i);
             }
         }
+        finalAnswer = primeList.get(10_001 - 1);
         //END SOLUTION
 
         long endTime = System.nanoTime();
-        result[0] = primeList.get(10_001 - 1);
+        result[0] = finalAnswer;
         result[1] = endTime - startTime;
         return result;
     }

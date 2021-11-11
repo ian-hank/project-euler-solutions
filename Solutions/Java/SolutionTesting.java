@@ -12,11 +12,11 @@ public class SolutionTesting {
 
     //Methods
     public static void SolutionPassed(long[] solutionAnswer, int solutionNumber) {
-        System.out.printf("Solution [%d]: PASSED t:%.1fμs", solutionNumber, SystemTimeToMicroSeconds(solutionAnswer[1]));
+        System.out.printf("Solution [%d]: PASSED t:%.1fμs\n", solutionNumber, SystemTimeToMicroSeconds(solutionAnswer[1]));
     }
 
     public static void SolutionFailed(long[] solutionAnswer, int solutionNumber, BigInteger ACTUAL_ANSWER) {
-        System.out.printf("Solution [%d]: !!!-FAILED-!!! Expected: %d Output: %d", solutionNumber, ACTUAL_ANSWER, solutionAnswer[0]);
+        System.out.printf("Solution [%d]: !!!-FAILED-!!! Expected: %d Output: %d\n", solutionNumber, ACTUAL_ANSWER, solutionAnswer[0]);
     }
 
     public static double SystemTimeToMicroSeconds(long timeInNanoSeconds) {
